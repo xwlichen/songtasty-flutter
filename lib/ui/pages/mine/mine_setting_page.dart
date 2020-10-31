@@ -17,7 +17,7 @@ class _MineSettingPageState extends State<MineSettingPage> {
     return Scaffold(
       body: Center(
         child: Text(
-          " SETTING ",
+          " SETTING 1",
           style: TextStyle(color: Colors.black),
         ),
       ),
