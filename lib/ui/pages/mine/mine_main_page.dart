@@ -1,32 +1,30 @@
 import 'package:flutter/material.dart';
 
-class MineMainPage extends StatefulWidget{
+class MineMainPage extends StatefulWidget {
   @override
-  _MineMianPageState  createState() =>new _MineMianPageState();
-
+  _MineMianPageState createState() => new _MineMianPageState();
 }
 
-class _MineMianPageState extends State<MineMainPage>{
+class _MineMianPageState extends State<MineMainPage> {
   @override
   Widget build(BuildContext context) {
-
     return _buildView();
   }
 
   Widget _buildView() {
-    return new Scaffold(
-      appBar: new AppBar(
-
-        title:  SafeArea(
-          child: Text("我的"),
-        )
+    return SafeArea(
+      top: false,
+        child: Scaffold(
+      appBar: AppBar(
+        title: Text("我的"),
       ),
       body: Center(
         child: Text(
-          " MINE ",
+          " MINE 1",
           style: TextStyle(color: Colors.black),
         ),
       ),
+    )
     );
   }
 }
