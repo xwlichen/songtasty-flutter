@@ -15,6 +15,10 @@ class _MineSettingPageState extends State<MineSettingPage> {
 
   Widget _buildView() {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("设置"),
+
+      ),
       body: Center(
         child: Text(
           " SETTING 1",

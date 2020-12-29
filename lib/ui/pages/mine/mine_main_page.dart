@@ -14,7 +14,13 @@ class _MineMianPageState extends State<MineMainPage>{
   }
 
   Widget _buildView() {
-    return Scaffold(
+    return new Scaffold(
+      appBar: new AppBar(
+
+        title:  SafeArea(
+          child: Text("我的"),
+        )
+      ),
       body: Center(
         child: Text(
           " MINE ",
