@@ -8,23 +8,29 @@ class MineMainPage extends StatefulWidget {
 class _MineMianPageState extends State<MineMainPage> {
   @override
   Widget build(BuildContext context) {
-    return _buildView();
+    return _buildView(context);
   }
 
-  Widget _buildView() {
+  Widget _buildView(BuildContext context) {
     return SafeArea(
-      top: false,
-        child: Scaffold(
-      appBar: AppBar(
-        title: Text("我的"),
+      child: Scaffold(
+        body: Padding(
+          padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+          child:Column(
+              children: <Widget>[
+                Row(
+                  children: [
+                    Text(
+                      "我的",
+                    ),
+                  ],
+
+                ),
+              ]
+          ),
+        )
       ),
-      body: Center(
-        child: Text(
-          " MINE 1",
-          style: TextStyle(color: Colors.black),
-        ),
-      ),
-    )
     );
+
   }
 }
