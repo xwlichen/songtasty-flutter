@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpage/utils/log_util.dart';
 
 class MineMainPage extends StatefulWidget {
   @override
@@ -8,6 +9,9 @@ class MineMainPage extends StatefulWidget {
 class _MineMianPageState extends State<MineMainPage> {
   @override
   Widget build(BuildContext context) {
+    LogUtil.e("top:"+(MediaQuery.of(context).padding.top).toString(),tag:"xw");
+    LogUtil.e("top:11",tag:"xw");
+    print("top:11");
     return _buildView(context);
   }
 
@@ -15,7 +19,7 @@ class _MineMianPageState extends State<MineMainPage> {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+          padding: EdgeInsets.fromLTRB(0,50,0,0),
           child:Column(
               children: <Widget>[
                 Row(

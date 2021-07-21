@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterpage/app/flutter_app.dart';
 import 'dart:io';
 import 'package:flutter/services.dart';
+import 'package:flutterpage/utils/log_util.dart';
 
 void main() {
 //  runApp(MaterialApp(
@@ -30,7 +31,6 @@ void main() {
 //      '/router_mine_main': (context) => SecondScreen(),
 //    },
 //  ));
-
   runApp(FlutterApp());
 
   if (Platform.isAndroid) {
